@@ -1,0 +1,302 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 350;
+    font-size: 52px;
+    color: black;
+}
+
+h3 {
+    font-weight: 370;
+    font-size: 22px;
+}
+
+.main-text {
+    text-align: center;
+    color: #d2f2ff;
+    max-width: 800px;
+    color: white;
+}
+
+img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #636b63;
+    border-color: #545854;
+    border-width: 3px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-primary a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color:#1a351c;
+    border-color: #182b19;
+    color: white;
+}
+
+.btn-primary:focus {
+    background-color:#1a351c;
+    border-color: #182b19;
+    color: white;
+}
+
+/* .container {
+    margin: 0 auto;
+    min-width: 350px;
+    max-width: 800px;
+} */
+
+.page {
+    position: relative;
+    height: 100vh;
+}
+
+.viewport-picture {
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%; 
+    height: 100%;   
+}
+
+.main-picture {
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614455533_1-p-fon-temnii-pereulok-1.jpg');
+}
+
+.page-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    bottom: 0; 
+    right: 0;
+    color: white;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a351c;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+
+.menu-list {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+}
+
+.menu-list li {
+    list-style-type: none;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #cde4ec;
+    position: relative;
+}
+
+.menu-list a:hover {
+    color: #d2f2ff;
+}
+
+.navbar-brand {
+    color: #ced9dddc;
+    padding: 0px 2px;
+}
+
+.navbar-brand:hover {
+    color: #d2f2ff;
+}
+
+.bi-list {
+    display: none;
+}
+
+
+.promo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    text-align: center;
+    min-height: 100vh;
+    height: auto;
+}
+
+.promo p{
+    font-size: medium;
+    margin: 0;
+}
+
+.services {
+    display: grid;
+    margin-top: 2rem;
+    --cols-num: 2;
+    grid-template-columns: repeat(var(--cols-num), 230px);
+    grid-template-rows: auto;
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+}
+
+.services-card {
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.services-card img {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.order {
+    max-height: 130vh;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614455533_1-p-fon-temnii-pereulok-1.jpg');
+}
+
+.request {
+    position: absolute;
+    left: 0;
+    padding-left: 15%;
+    padding-right: 3%;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 52vw;
+    opacity: 0.9;
+    color: white;
+}
+
+.contacts {
+    min-height: 25vh;
+    background-color: #1a351c;
+    padding: 5vh 0vw 5vh 10vw;
+}
+
+.contacts h5 {
+    color: white;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: left;
+}
+
+.contact {
+    margin: 20px 15px 0 0;
+    display: flex;
+}
+
+.contact li {
+    list-style-type: none;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 970px) {
+    .main-menu {
+        flex-wrap: wrap;
+    }
+
+    .bi-list {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        --menu-li-height: 1rem;
+        --menu-li-gap: .5rem;
+        --menu-elems-num: 3;
+        width: 100%;
+        height: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--menu-li-gap);
+        padding: 0;
+        overflow: hidden;
+        transition: height .7s;
+    }
+
+    .menu-list.show {
+        margin-top: 5px;
+        height: calc((var(--menu-li-height) + var(--menu-li-gap)) * var(--menu-elems-num));
+    }
+
+    .menu-list li {
+        height: var(--menu-li-height);
+    }
+
+    .page {
+        position: relative;
+        height: 120vh;
+        width: 100%;
+    }
+
+    .promo {
+        height: auto;
+    }
+
+    .services {
+        --cols-num: 1;
+    }
+
+    .order{
+        width: 100%;
+    }
+
+    .request {
+        width: 100%;
+    }
+
+    .contacts-list {
+        display: block;
+    }
+}
+

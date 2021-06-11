@@ -1,0 +1,151 @@
+<!-- HTML 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarZing</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="main-menu">
+    <a href="#" class="navbar-brand">EarZing</a>
+    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#bdd9e4bd" class="bi bi-list"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </svg>
+    <ul class="menu-list">
+      <li><a href="#services" id="services-link">Возможности</a></li>
+      <li><a href="#contacts" id="contacts-link">Контакты</a></li>
+    </ul>
+  </nav>
+  <section class="page main-page">
+    <div class="main-picture viewport-picture"></div>
+    <div class="page-content">
+      <div class="main-text">
+        <h1>Наушники с возможностью
+          подать сигнал об опасности</h1>
+        <p>В случае, когда вам грозит опасность, просто назовите кодовое слово. Далее ваши данные о местоположении будут переданы экстренным службам для быстрого реагирования. Наушник миниатюрен и абсолютно не будет мешать в повседневной жизни. Лёгок по весу и в использовании. Так что подходит для маленьких ушек детей, а с управлением справится любая бабушка.
+        </p>
+      </div>
+      <div class="control">
+        <button class="btn btn-primary" <li><a href="#product" id="product-link">Узнать больше о работе устройства</a></li></button>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="page promo">
+    <div class="promo-main-text">
+      <h2>Основные функции</h2>
+    </div>
+    <div class="services">
+      <div class="services-card">
+        <img src="photo/1c.jpg" alt="">
+        <h3>Синхронизация</h3>
+        <p>Можно использовать как приложение, так и наушник, а также, с помощью синхронизации, одновременно и то, и то</p>
+      </div>
+      <div class="services-card">
+        <img src="photo/2c.jpg" alt="">
+        <h3>Возможность установить таймер</h3>
+        <p>Можно устанавливать таймер на определённое время для проверки безопасности</p>
+      </div>
+      <div class="services-card">
+        <img src="photo/3c.jpg" alt="" height="300px">
+        <h3>Отслеживание местоположения</h3>
+        <p>Устройство может отслеживать местоположение пользователя и отправлять эти данные в случае опасности</p>
+      </div>
+      <div class="services-card">
+        <img src="photo/4c.jpg" alt="">
+        <h3>Работа в фоновом режиме</h3>
+        <p>Можно тратить меньше заряда аккомулятора и использовать устройство как обычный наушник</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="product" class="page order">
+    <div class="page-content">
+      <div class="request">
+        <h4>Как именно работают наушники?</h4>
+        <p>Наушники могут отслеживать окружающую вас обстановку, и при регистрировании каких-либо громких звуков или определеных фраз, намекающих на опасность вашей личной безопасности, активируется функция, которая позволяет уточнить у вас нужно ли отправить сигнал (ваши координаты) в экстренные службы. При отсутствии ответа отправка сигнала активируется автоматически.
+        </p>
+      </div>
+    </div>
+  </section> -->
+  <section id="product" class="page order">
+    <div class="page-content">
+      <div class="request">
+      <h4>Как именно работают наушники?</h4>
+      <p>Наушники распознают произнесенное вами кодовое слово по звуковой волне, характерной вашему голосу, после чего передает сообщение о вашем местоположении соответствующим контактам/экстренным службам. В случае произнесения только части слова или фиксирования подозрительных звуков в окружающей вас обстановке, активируется функция, которая позволит задать пользователю вопрос, проверяющий реальность угрозы вашему здоровью, жизни или имуществу, при отсутствии ответа отправка сигнала активируется автоматически.
+      </p>
+      <div class="control">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Заказать
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form-order">
+            <label class="form-label">ФИО
+              <input class="form-control" type="text" name="fio">
+            </label>
+            <label class="form-label">
+              Телефон
+              <input class="form-control" type="tel" name="phone">
+            </label>
+            <label for="select-country">Страна проживания</label>
+            <select name="country" id="select-country" class="form-select" aria-label="Default select example">
+              <option selected>Выберите страну для отправки</option>
+              <option value="Russia">Россия</option>
+              <option value="France">Франция</option>
+              <option value="Turkey">Турция</option>
+              <option value="Italy">Италия</option>
+              <option value="Greece">Греция</option>
+            </select>
+            <!-- <label class="form-label" for="trip-info">
+              Сообщение
+            </label>
+            <textarea id="trip-info" class="form-control" type="text" name="info" style="width: 100%;"></textarea> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button id="btn-order" type="button" class="btn btn-primary" data-bs-dismiss="modal">Сделать заказ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="contacts" class="contacts">
+    <h5>Разработчики проекта:</h5>
+    <div class="contacts-list">
+      <div class="contact">
+        <li><a href="https://vk.com/fstfck" id="promo-link">Бокова Ольга,</a></li>
+      </div>
+      <div class="contact">
+        <li><a href="https://vk.com/katrin_weather">Магнитская Екатерина,</a></li>
+      </div>
+      <div class="contact">
+        <li><a href="https://vk.com/svetleem">Емельяненко Светлана,</a></li>
+      </div>
+      <div class="contact">
+        <li><a href="https://vk.com/nn_voron">Воронков Илья</a></li>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
